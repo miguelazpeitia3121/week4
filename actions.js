@@ -29,7 +29,7 @@ $(document).ready(function(){
 	navigator.geolocation.getCurrentPosition(function(position){
 		initialize(positoin.coords.latitude, position.cords.longitude); //esto lo agregamos
 	}, function(err){
-		navigator.notification.alert('Error: '+err.code, fuction(){  }, 'Geolocalizacion', 'Aceptar');	
+		navigator.notification.alert('Error: ' + err.code, function(){  }, 'Geolocalizacion', 'Aceptar');	
 	}); // esta la agregamos. fuccion error
 	
 	}, false);
